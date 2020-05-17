@@ -1,3 +1,5 @@
+// First Baptist Church Bigfork     Member.java
+
 package com.glacierwebcreative.firstbaptistchurchbigfork;
 
 public class Member {

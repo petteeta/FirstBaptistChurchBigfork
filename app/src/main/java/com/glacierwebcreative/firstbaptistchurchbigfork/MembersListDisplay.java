@@ -1,3 +1,5 @@
+// First Baptist Church Bigfork     MembersListDisplay.java
+
 package com.glacierwebcreative.firstbaptistchurchbigfork;
 
 import android.os.AsyncTask;
@@ -46,13 +48,13 @@ public class MembersListDisplay extends AppCompatActivity {
                     URL url = new URL(urlWebservice);
                     HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
+
                     StringBuilder sb = new StringBuilder();
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
                     String json;
                     while ((json = bufferedReader.readLine()) !=null) {
                         sb.append(json + "\n");
                     }
-
                     return sb.toString().trim();
 
                 } catch (Exception e) {
